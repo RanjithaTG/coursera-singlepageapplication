@@ -4,7 +4,7 @@
   
   angular.module("LunchCheck" ,[]).
   controller('LunchCheckController',function ($scope){
-    
+    console.log($scope.userInput);
     $scope.output ="HELLO";
     $scope.checkFoodCount = function(){
       

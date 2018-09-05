@@ -2,7 +2,7 @@
   'use strict';
   
   
-  angular.module("LunchCheck" ,[]).
+  angular.module("LunchCheck" ,[])
   controller('LunchCheckController',function ($scope){
     
     
@@ -14,7 +14,7 @@
       if(items.length>=3){
         $scope.output = "Too much!";
       else
-        $scope.output = "Enjoy!"
+        $scope.output = "Enjoy!";
       }
     }
   });

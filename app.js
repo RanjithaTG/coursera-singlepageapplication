@@ -7,7 +7,7 @@
     
     
     function checkFoodCount(){
-      var items[] = $scope.userInput.split(',');
+      var items = $scope.userInput.split(',');
       if(items==0){
         $scope.output= "Please enter data first"
       }

@@ -6,7 +6,7 @@
   controller('LunchCheckController',function ($scope){
     
     
-    function checkFoodCount($scope.userInput){
+    function checkFoodCount(){
       var items[] = $scope.userInput.split(',');
       if(items==0){
         $scope.output= "Please enter data first"

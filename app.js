@@ -5,7 +5,7 @@
   angular.module("LunchCheck" ,[]).
   controller('LunchCheckController',function ($scope){
     
-    
+    $scope.output ="HELLO";
     function checkFoodCount(){
       var items = $scope.userInput.split(',');
       if(items==0){

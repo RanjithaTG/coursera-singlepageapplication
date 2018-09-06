@@ -9,7 +9,7 @@
 					if (angular.isDefined($scope.userInput)
 							&& $scope.userInput != "")
 						items = $scope.userInput.split(',');
-					if (angular.isUndefined(items) && items.length == 0) {
+					if (items.length == 0) {
 						$scope.output = "Please enter data first"
 						$scope.success = false;
 					} else {

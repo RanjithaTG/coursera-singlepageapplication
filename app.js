@@ -4,9 +4,9 @@
 	angular.module("LunchCheck", []).controller(
 			'LunchCheckController',
 			function($scope) {
-				var items = [];
-				var foodItems  =[];
 				$scope.checkFoodCount = function() {
+					var items = [];
+					var foodItems  =[];
 					if (angular.isDefined($scope.userInput)
 							&& $scope.userInput != ""){
 						items = $scope.userInput.split(',');

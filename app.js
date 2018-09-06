@@ -17,10 +17,10 @@
 						}
 					
 					}
-					if (items.length == 0) {
+					if (foodItems.length == 0) {
 						$scope.output = "Please enter data first"
 					} else {
-						if (items.length > 3) {
+						if (foodItems.length > 3) {
 							$scope.output = "Too much!";
 						} else {
 							$scope.output = "Enjoy!";

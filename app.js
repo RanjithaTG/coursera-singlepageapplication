@@ -9,7 +9,7 @@
 					if (angular.isDefined($scope.userInput)
 							&& $scope.userInput != ""){
 						items = $scope.userInput.split(',');
-						for(var i=0;i< items.length;i++){
+						for(var i=0;i<=items.length;i++){
 							if(items[i]==""){
 								items.splice(i,1);
 							}

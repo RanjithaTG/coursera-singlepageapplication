@@ -6,8 +6,8 @@
   controller('LunchCheckController',function ($scope){
     console.log($scope.userInput);
     $scope.checkFoodCount = function(){
-      
-      var items = $scope.userInput.split(',');
+      if( $scope.userInput != "")
+         var items = $scope.userInput.split(',');
       if(angular.isUndefined(items) && items.length==0){
         $scope.output= "Please enter data first"
  	$scope.success=false;

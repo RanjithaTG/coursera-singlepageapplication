@@ -10,8 +10,8 @@
 					if (angular.isDefined($scope.userInput)
 							&& $scope.userInput != ""){
 						items = $scope.userInput.split(',');
-						for(var i=0;i<=items.length;i++){
-							if(items[i]!=""){
+						for(var i=0;i<items.length;i++){
+							if(angular.isDefined(items[i]) && items[i]!=""){
 								foodItems.push(items[i]);
 							}
 						}

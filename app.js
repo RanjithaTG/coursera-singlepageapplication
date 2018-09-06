@@ -4,9 +4,8 @@
   
   angular.module("LunchCheck" ,[]).
   controller('LunchCheckController',function ($scope){
-    console.log($scope.userInput);
     $scope.checkFoodCount = function(){
-      if( $scope.userInput != "")
+      if( angular.isDefined($scope.userInput) && $scope.userInput != "")
          var items = $scope.userInput.split(',');
       if(angular.isUndefined(items) && items.length==0){
         $scope.output= "Please enter data first"

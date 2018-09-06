@@ -13,10 +13,11 @@
         $scope.fontColor="green";
       }
       else{
-            if(items.length>3)
+            if(items.length>3){
               $scope.output = "Too much!";
               $scope.fontColor="red";
-            else
+            }
+            else{
               $scope.output = "Enjoy!";
               $scope.fontColor="green";
             }

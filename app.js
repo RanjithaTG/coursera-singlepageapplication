@@ -22,6 +22,7 @@
               $scope.fontColor="green";
             }
     }
+	}
     
   });
     

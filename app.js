@@ -11,14 +11,20 @@
 						items = $scope.userInput.split(',');
 					if (items.length == 0) {
 						$scope.output = "Please enter data first"
-						$scope.success = false;
+						$scope.myObj ={
+							"font-color":"green"
+						}
 					} else {
 						if (items.length > 3) {
 							$scope.output = "Too much!";
-							$scope.success = false;
+								$scope.myObj ={
+							"font-color":"red"
+						}
 						} else {
 							$scope.output = "Enjoy!";
-							$scope.success = true;
+								$scope.myObj ={
+							"font-color":"green"
+						}
 						}
 					}
 				}

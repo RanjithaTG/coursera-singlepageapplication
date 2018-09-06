@@ -8,14 +8,19 @@
     $scope.checkFoodCount = function(){
       
       var items = $scope.userInput.split(',');
-      if(items==0){
+      if(angular.isUndefined(items) && items.length==0){
         $scope.output= "Please enter data first"
+        $scope.fontColor="green";
       }
-      if(items.length>3)
-        $scope.output = "Too much!";
-      else
-        $scope.output = "Enjoy!";
-      }
+      else{
+            if(items.length>3)
+              $scope.output = "Too much!";
+              $scope.fontColor="red";
+            else
+              $scope.output = "Enjoy!";
+              $scope.fontColor="green";
+            }
+    }
     
   });
     
